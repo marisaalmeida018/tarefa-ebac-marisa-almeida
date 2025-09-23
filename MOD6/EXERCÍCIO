@@ -1,1 +1,51 @@
+INÍCIO
+    Abrir os olhos
+    Verificar o horário
+        SE for antes das 7 horas da manhã
+            voltar a dormir
+        SENÃO
+            levantar
+    Calçar os chinelos
+    Abrir a porta
+    Andar até o banheiro
+    Abrir a porta do banheiro
+    Andar até a pia
+    Pegar a escova de dentes
+    Pegar a pasta de dentes
+    Abrir a pasta de dentes
+    Colocar a pasta de dentes na escova
+    Escovar os dentes
+    Cuspir a pasta de dentes
+    Guardar a escova e pasta de dentes
+    Vontade de urinar?
+        SE SIM
+            ir até o vaso sanitário
+            levantar a tampa
+            abaixar as calças
+            sentar no vaso sanitário
+            urinar
+            se limpar com papel higiênico
+            jogar papel higiênico no lixo
+            levantar
+            se vestir
+            abaixar a tampa
+            dar descarga
+            andar até a pia
+            abrir a torneira
+            colocar sabão nas mãos
+            lavar as mãos
+            fechar a torneira
+            secar as mão na com a toalha
+    Sair do banheiro
+    Fechar a porta
+    Andar até a cozinha
+    Pegar o pó de café em cima da bancada
+    Colocar o pó de café dentro da cafeteira no local determinado
+    Colocar água dentro da cafeteira no local determinado
+    Ligar a cafeteira
+    Aguardar o café ficar pronto
+    Pegar uma xícara no porta xícaras
+    Colocar o café dentro da xícara
+FIM   
+
 
