@@ -1,9 +1,18 @@
-package br.marisaalmeida.domain;
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package javaapplication1.domain;
 
 import java.util.Objects;
 
+/**
+ *
+ * @author rodrigo.pires
+ */
 public class Cliente {
-
+    
     private String nome;
     private Long cpf;
     private Long tel;
@@ -14,13 +23,13 @@ public class Cliente {
 
     public Cliente(String nome, String cpf, String tel, String end, String num, String cidade, String estado) {
         this.nome = nome;
-        this.cpf = Long.valueOf(cpf.trim());
-        this.tel = Long.valueOf(tel.trim());
+        this.cpf = Long.valueOf(cpf);
+        this.tel = Long.valueOf(tel);
         this.end = end;
-        this.numero = Integer.valueOf(num.trim());
+        this.numero = Integer.valueOf(num);
         this.cidade = cidade;
         this.estado = estado;
-
+        
     }
 
     public String getNome() {
@@ -80,23 +89,34 @@ public class Cliente {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Cliente cliente = (Cliente) o;
-        return Objects.equals(cpf, cliente.cpf);
-    }
-
-    @Override
     public int hashCode() {
-        return Objects.hash(cpf);
+        int hash = 7;
+        hash = 79 * hash + Objects.hashCode(this.cpf);
+        return hash;
     }
 
     @Override
-    public String toString() {
-        return "Cliente{" +
-                "nome='" + nome + '\'' +
-                ", cpf=" + cpf +
-                '}';
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Cliente other = (Cliente) obj;
+        if (!Objects.equals(this.cpf, other.cpf)) {
+            return false;
+        }
+        return true;
     }
+
+//    @Override
+//    public int compareTo(Cliente cliente) {
+//        return Long.compare(this.cpf, cliente.getCpf());
+//    }
+
+    
 }
